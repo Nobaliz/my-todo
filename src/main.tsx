@@ -1,10 +1,10 @@
 import { createRoot } from 'react-dom/client'
-import * as Sentry from '@sentry/react'
+
 import App from './App.tsx'
 import { initSentry } from './sentry'
 import { useEffect } from "react";
 import { initAnalytics } from "./analytics";
-
+import * as Sentry from '@sentry/react'
 useEffect(() => {
   initAnalytics();
 }, []);
